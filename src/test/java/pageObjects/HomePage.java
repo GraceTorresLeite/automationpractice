@@ -30,6 +30,6 @@ public class HomePage {
 	}
 	
 	public WebElement proceedCheckout() {
-		return waits.visibilityOfElement(By.xpath("//p[@class='cart_navigation clearfix']/a"));
+		return waits.visibilityOfElement(By.xpath("//div[@class='button-container']/a"));
 	}
 }
