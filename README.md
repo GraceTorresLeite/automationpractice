@@ -22,16 +22,16 @@
 
 ## :chart_with_upwards_trend:[Reports: últimos testes válidos - link html](https://gracetorresleite.github.io/automationpractice/Report/Report_21-12-2020_13-39-59/MyReport_21-12-2020_13-39-59.html) 
 	
-	* Screenshot 1
+* Screenshot 1
 	<img src="/Report/Report_21-12-2020_13-39-59/Screenshot/Image_21-Dec-2020_01h40m7s.png" width="200" height="100">
 	
-	* Screenshot 2
+* Screenshot 2
 	<img src="/Report/Report_21-12-2020_13-39-59/Screenshot/Image_21-Dec-2020_01h40m8s.png" width="200" height="100">
 	
-	* Screenshot 3
+* Screenshot 3
 	<img src="/Report/Report_21-12-2020_13-39-59/Screenshot/Image_21-Dec-2020_01h40m41s.png" width="200" height="100">
 	
-	* Screenshot 4
+* Screenshot 4
 	<img src="/Report/Report_21-12-2020_13-39-59/Screenshot/Image_21-Dec-2020_01h40m42s.png" width="200" height="100">
 	
 
