@@ -33,17 +33,21 @@ public class HomeTask {
 	      waits.loadElement(homePage.proceedCheckout());
 	      homePage.proceedCheckout().click();
 	      checkoutValidation();
+	      waits.loadElement(homePage.verifyTotalAndProceedCheckoutAgain());
+	      homePage.verifyTotalAndProceedCheckoutAgain().click();
+	      totalCartValidation();
+	      
 		
 	}
 	private void homeValidation() {
 		
 		try {
 			Assertions.assertTrue(homePage.homeTitle().isDisplayed());
-			Report.extentTest.log(Status.PASS, "Página acessada com sucesso", Screenshot.capture(driver));
+			Report.extentTest.log(Status.PASS, "Pagina acessada com sucesso", Screenshot.capture(driver));
 		
 		}catch (Exception e){
 
-	        Report.extentTest.log(Status.FAIL, "Não foi possivel acessar a página", Screenshot.capture(driver));
+	        Report.extentTest.log(Status.FAIL, "Nao foi possivel acessar a pagina", Screenshot.capture(driver));
 
 	        }
 	}
@@ -55,7 +59,7 @@ public class HomeTask {
 		
 		}catch (Exception e){
 
-	        Report.extentTest.log(Status.FAIL, "Não foi possivel add o produto", Screenshot.capture(driver));
+	        Report.extentTest.log(Status.FAIL, "Nao foi possivel add o produto", Screenshot.capture(driver));
 
 	        }
 	}
@@ -63,12 +67,25 @@ public class HomeTask {
 	private void checkoutValidation() {
 		
 		try {
-			Assertions.assertTrue(homePage.proceedCheckout().isDisplayed());
+			Assertions.assertTrue(homePage.proceedCheckout().isSelected());
 			Report.extentTest.log(Status.PASS, "Checkout com sucesso", Screenshot.capture(driver));
 		
 		}catch (Exception e){
 
-	        Report.extentTest.log(Status.FAIL, "Não foi possivel realizar o checkout", Screenshot.capture(driver));
+	        Report.extentTest.log(Status.FAIL, "Nao foi possivel realizar o checkout", Screenshot.capture(driver));
+
+	        }
+	}
+	
+	private void totalCartValidation() {
+		
+		try {
+			Assertions.assertTrue(homePage.verifyTotalAndProceedCheckoutAgain().isSelected());
+			Report.extentTest.log(Status.PASS, "Total cart e checkout com sucesso", Screenshot.capture(driver));
+		
+		}catch (Exception e){
+
+	        Report.extentTest.log(Status.FAIL, "Nao foi possivel o checkout do total do carrinho", Screenshot.capture(driver));
 
 	        }
 	}
