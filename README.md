@@ -1,6 +1,6 @@
 # automationpractice
 ## Teste - Realizar uma compra com sucesso
-<img src="/prototipo_html/logoSchedule.png" width="200" height="200">
+<img src="/img/Automation.png" width="300" height="200">
 
 ## [Site](http://automationpractice.com/index.php?)
  
