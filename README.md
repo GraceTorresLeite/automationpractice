@@ -40,11 +40,8 @@ ___
 	
 	<img src="/Report/Report_21-12-2020_16-29-24/Screenshot/Image_21-Dec-2020_04h30m39s.png" width="200" height="100">
 	
+	
 * Screenshot 5
-	
-	<img src="/Report/Report_21-12-2020_16-29-24/Screenshot/Image_21-Dec-2020_04h30m40s.png" width="200" height="100">
-	
-* Screenshot 6
 	
 	<img src="/Report/Report_21-12-2020_16-29-24/Screenshot/Image_21-Dec-2020_04h30m41s.png" width="200" height="100">
 ___
