@@ -20,7 +20,7 @@
 
 
 
-## :chart_with_upwards_trend:[Reports](/Report) 
+## :chart_with_upwards_trend:[Reports](/Report/Screenshot_Html.md) 
 
 
 * [Reports - tentaivas descartadas]()
