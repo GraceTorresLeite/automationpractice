@@ -51,16 +51,17 @@ public class HomeTask {
 	private void addValidation() {
 		try {
 			Assertions.assertTrue(homePage.addCart().isDisplayed());
-			Report.extentTest.log(Status.PASS, "Cart acessado com sucesso", Screenshot.capture(driver));
+			Report.extentTest.log(Status.PASS, "Produto add com sucesso", Screenshot.capture(driver));
 		
 		}catch (Exception e){
 
-	        Report.extentTest.log(Status.FAIL, "Não foi possivel acessar o cart", Screenshot.capture(driver));
+	        Report.extentTest.log(Status.FAIL, "Não foi possivel add o produto", Screenshot.capture(driver));
 
 	        }
 	}
 	
 	private void checkoutValidation() {
+		
 		try {
 			Assertions.assertTrue(homePage.proceedCheckout().isDisplayed());
 			Report.extentTest.log(Status.PASS, "Checkout com sucesso", Screenshot.capture(driver));
