@@ -20,7 +20,7 @@
 
 
 
-## :chart_with_upwards_trend:[Reports](/doc/tecnica/README.md) 
+## :chart_with_upwards_trend:[Reports](/Report) 
 
 
 * [Reports - tentaivas descartadas]()
