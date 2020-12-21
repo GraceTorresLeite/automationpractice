@@ -80,7 +80,7 @@ public class HomeTask {
 	private void totalCartValidation() {
 		
 		try {
-			Assertions.assertTrue(homePage.verifyTotalAndProceedCheckoutAgain().isSelected());
+			Assertions.assertTrue(homePage.verifyTotalAndProceedCheckoutAgain().isDisplayed());
 			Report.extentTest.log(Status.PASS, "Total cart e checkout com sucesso", Screenshot.capture(driver));
 		
 		}catch (Exception e){

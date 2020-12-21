@@ -9,24 +9,30 @@ import formWeb.Report;
 import formWeb.Screenshot;
 import formWeb.Waits;
 import pageObjects.SignIn;
+import utils.FakerGeneration;
 
 public class SignInTask {
 	
 	private static WebDriver driver;
 	private static SignIn signIn;
 	private static Waits waits;
+	private FakerGeneration faker;
+	
 	
 	public SignInTask(WebDriver driver){
 		this.driver = driver;
 		signIn = new SignIn(this.driver);
 		waits = new Waits(this.driver);
+		faker = new FakerGeneration(this.driver);
 	}
 	
 	public void getForm() {
 		linkValidation();
 		waits.loadElement(signIn.createAccount());
-		signIn.createAccount().click();
+		signIn.createAccount().sendKeys(faker.getEmail());
 		createValidation();
+		signIn.submitCreateAccount().click();
+		submitCreateValidation();
 		
 		
 	}
@@ -44,6 +50,7 @@ public class SignInTask {
 	        }
 	}
 	
+	
 	private void createValidation() {
 		
 		try {
@@ -53,6 +60,20 @@ public class SignInTask {
 		}catch (Exception e){
 
 	        Report.extentTest.log(Status.FAIL, "Não foi possivel acessar criar conta", Screenshot.capture(driver));
+
+	        }
+	}
+	
+	
+	private void submitCreateValidation() {
+		
+		try {
+			Assertions.assertTrue(signIn.submitCreateAccount().isDisplayed());
+			Report.extentTest.log(Status.PASS, "criar conta submit sucesso", Screenshot.capture(driver));
+		
+		}catch (Exception e){
+
+	        Report.extentTest.log(Status.FAIL, "Não foi possivel acessar criar conta submit", Screenshot.capture(driver));
 
 	        }
 	}

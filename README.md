@@ -21,7 +21,7 @@
 ___
 
 
-## :chart_with_upwards_trend:[Reports: últimos testes válidos - link html](https://gracetorresleite.github.io/automationpractice/Report/Report_21-12-2020_14-54-20/MyReport_21-12-2020_14-54-20.html) 
+## :chart_with_upwards_trend:[Reports: últimos testes válidos - link html](https://gracetorresleite.github.io/automationpractice/Report/Report_21-12-2020_16-29-24/MyReport_21-12-2020_16-29-24.html) 
 
 	
 * Screenshot 1
@@ -30,21 +30,23 @@ ___
 	
 * Screenshot 2
 
-	<img src="/Report/Report_21-12-2020_14-54-20/Screenshot/Image_21-Dec-2020_02h54m31s.png" width="200" height="100">	
+	<img src="/Report/Report_21-12-2020_16-29-24/Screenshot/Image_21-Dec-2020_04h29m33s.png" width="200" height="100">	
 	
 * Screenshot 3
 	
-	<img src="/Report/Report_21-12-2020_14-54-20/Screenshot/Image_21-Dec-2020_02h55m12s.png" width="200" height="100">
+	<img src="/Report/Report_21-12-2020_16-29-24/Screenshot/Image_21-Dec-2020_04h30m6s.png" width="200" height="100">
 	
 * Screenshot 4
 	
-	<img src="/Report/Report_21-12-2020_14-54-20/Screenshot/Image_21-Dec-2020_02h55m49s.png" width="200" height="100">
+	<img src="/Report/Report_21-12-2020_16-29-24/Screenshot/Image_21-Dec-2020_04h30m39s.png" width="200" height="100">
 	
 * Screenshot 5
 	
-	<img src="/Report/Report_21-12-2020_14-54-20/Screenshot/Image_21-Dec-2020_02h55m50s.png" width="200" height="100">
+	<img src="/Report/Report_21-12-2020_16-29-24/Screenshot/Image_21-Dec-2020_04h30m40s.png" width="200" height="100">
 	
-
+* Screenshot 6
+	
+	<img src="/Report/Report_21-12-2020_16-29-24/Screenshot/Image_21-Dec-2020_04h30m41s.png" width="200" height="100">
 ___
 
 

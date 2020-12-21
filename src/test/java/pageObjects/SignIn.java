@@ -23,4 +23,8 @@ public class SignIn {
 	 public WebElement createAccount() {
 		 return waits.visibilityOfElement(By.xpath("//input[@id='email_create']"));
 	 }
+	 
+	 public WebElement submitCreateAccount() {
+		 return waits.visibilityOfElement(By.xpath("//div[@class='submit']/button[@id='SubmitCreate']"));
+	 }
 }
