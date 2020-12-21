@@ -11,7 +11,7 @@
 |  3    |add produto ao carrinho                          |Pass                    |
 |  4    |Prossiga para Checkout                           |Erro                    |
 |  5    |Validar se o item foi add ao carrinho            |acusou erro na resposta |
-|  6    |cadastrar cliente com todos os campos            |                        |
+|  6    |cadastrar cliente com todos os campos            |Pass acesso page        |
 |  7    |validar endereço se correto e prosseguir         |                        |
 |  8    |aceitar termos de serviço                        |                        |
 |  9    |validar custo total da compra                    |                        |
@@ -21,20 +21,23 @@
 ___
 
 
-## :chart_with_upwards_trend:[Reports: últimos testes válidos - link html](https://gracetorresleite.github.io/automationpractice/Report/Report_21-12-2020_13-39-59/MyReport_21-12-2020_13-39-59.html) 
+## :chart_with_upwards_trend:[Reports: últimos testes válidos - link html](https://gracetorresleite.github.io/automationpractice/Report/Report_21-12-2020_14-54-20/MyReport_21-12-2020_14-54-20.html) 
 
 	
 * Screenshot 1
-	<img src="/Report/Report_21-12-2020_13-39-59/Screenshot/Image_21-Dec-2020_01h40m7s.png" width="200" height="100">
+	<img src="/Report/Report_21-12-2020_14-54-20/Screenshot/Image_21-Dec-2020_02h55m12s.png" width="200" height="100">
 	
 * Screenshot 2
-	<img src="/Report/Report_21-12-2020_13-39-59/Screenshot/Image_21-Dec-2020_01h40m8s.png" width="200" height="100">
+	<img src="/Report/Report_21-12-2020_14-54-20/Screenshot/Image_21-Dec-2020_02h54m30s.png" width="200" height="100">
 	
 * Screenshot 3
-	<img src="/Report/Report_21-12-2020_13-39-59/Screenshot/Image_21-Dec-2020_01h40m41s.png" width="200" height="100">
+	<img src="/Report/Report_21-12-2020_14-54-20/Screenshot/Image_21-Dec-2020_02h54m31s.png" width="200" height="100">
 	
 * Screenshot 4
-	<img src="/Report/Report_21-12-2020_13-39-59/Screenshot/Image_21-Dec-2020_01h40m42s.png" width="200" height="100">
+	<img src="/Report/Report_21-12-2020_14-54-20/Screenshot/Image_21-Dec-2020_02h55m49s.png" width="200" height="100">
+	
+* Screenshot 5
+	<img src="/Report/Report_21-12-2020_14-54-20/Screenshot/Image_21-Dec-2020_02h55m50s.png" width="200" height="100">
 	
 
 ___
