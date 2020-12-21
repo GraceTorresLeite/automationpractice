@@ -18,9 +18,11 @@
 |  10   |selecionar pagamento                             |                        |
 |  11   |confirme e valide se finalizado com sucesso      |                        |
 
+___
 
 
 ## :chart_with_upwards_trend:[Reports: últimos testes válidos - link html](https://gracetorresleite.github.io/automationpractice/Report/Report_21-12-2020_13-39-59/MyReport_21-12-2020_13-39-59.html) 
+
 	
 * Screenshot 1
 	<img src="/Report/Report_21-12-2020_13-39-59/Screenshot/Image_21-Dec-2020_01h40m7s.png" width="200" height="100">
@@ -35,8 +37,11 @@
 	<img src="/Report/Report_21-12-2020_13-39-59/Screenshot/Image_21-Dec-2020_01h40m42s.png" width="200" height="100">
 	
 
+___
+
 
 * [Reports - tentaivas descartadas adotados paths alternativos -last](https://gracetorresleite.github.io/automationpractice/Tentativas/ReportDescart_20-12-2020_23-18-47/MyReportDescart_20-12-2020_23-18-47.html)
+
 
 * Screenshot 1
 <img src="/Tentativas/ReportDescart_20-12-2020_23-18-47/ScreenshotDescart/Image_20-Dec-2020_11h18m55s.png" width="200" height="100">
