@@ -26,7 +26,7 @@ ___
 	
 * Screenshot 1
 
-	<img src="/Report/Report_21-12-2020_14-54-20/Screenshot/Image_21-Dec-2020_02h54m30s.png" width="200" height="100">
+	<img src="/Report/Report_21-12-2020_16-00-58/Screenshot/Image_21-Dec-2020_04h01m7s.png" width="200" height="100">
 	
 * Screenshot 2
 
