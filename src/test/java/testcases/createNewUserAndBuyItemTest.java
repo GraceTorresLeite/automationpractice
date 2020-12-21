@@ -23,7 +23,7 @@ public class createNewUserAndBuyItemTest extends BaseTest {
 	public void createUserForm() {
 		try{
 
-            Report.startReport("acessando a página");
+            Report.startReport("Automation steps");
 
             homeTask.acessPageAutomationWeb();
             signIntask.getForm();
