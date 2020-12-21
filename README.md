@@ -20,7 +20,7 @@
 
 
 
-## :chart_with_upwards_trend:[Reports](https://gracetorresleite.github.io/automationpractice/Report/Report_21-12-2020_02-23-46/MyReport_21-12-2020_02-23-46.html) 
+## :chart_with_upwards_trend:[Reports em andamento de testes válidos - link html](https://gracetorresleite.github.io/automationpractice/Report/Report_21-12-2020_02-23-46/MyReport_21-12-2020_02-23-46.html) 
 
 
 * [Reports - tentaivas descartadas adotados paths alternativos -last](https://gracetorresleite.github.io/automationpractice/Tentativas/ReportDescart_20-12-2020_23-18-47/MyReportDescart_20-12-2020_23-18-47.html)
