@@ -9,7 +9,6 @@ import formWeb.Report;
 import formWeb.Screenshot;
 import formWeb.Waits;
 import pageObjects.FormPage;
-import pageObjects.HomePage;
 import utils.FakerGeneration;
 
 public class FormTask {
@@ -68,7 +67,7 @@ public class FormTask {
     	formPage.getStateSelectField().click();
     	
     	waits.loadElement(formPage.getPostCodeTextField());
-    	formPage.getPostCodeTextField().sendKeys(faker.getAddressPostalCode());
+    	formPage.getPostCodeTextField().sendKeys("77777");
     	
     	waits.loadElement(formPage.getCountrySelectField());
     	formPage.getCountrySelectField().click();
@@ -79,8 +78,10 @@ public class FormTask {
     	formPage.getHomePhoneTextField().sendKeys(faker.getPhoneHome());
     	waits.loadElement(formPage.getMobilePhoneTextField());
     	formPage.getMobilePhoneTextField().sendKeys(faker.getPhoneMobile());
+    	
     	waits.loadElement(formPage.getAddressRefenceTextField());
-    	formPage.getAddressRefenceTextField().sendKeys(faker.getBooleanAddressSecundary());
+    	formPage.getAddressRefenceTextField().sendKeys(faker.getAddressFirtsName());
+    	
     	waits.loadElement(formPage.getButtonRegister());
     	formPage.getButtonRegister().click();
     	buttonValidation();
@@ -116,11 +117,11 @@ public class FormTask {
     	
     	try {
 			Assertions.assertTrue(formPage.getButtonRegister().isDisplayed());
-			Report.extentTest.log(Status.PASS, "Pagina acessada com sucesso", Screenshot.capture(driver));
+			Report.extentTest.log(Status.PASS, "Etapa Address concluída com sucesso", Screenshot.capture(driver));
 		
 		}catch (Exception e){
 
-	        Report.extentTest.log(Status.FAIL, "Nao foi possivel acessar a pagina", Screenshot.capture(driver));
+	        Report.extentTest.log(Status.FAIL, "Nao foi possivel concluir a etapa Address", Screenshot.capture(driver));
 
 	        }
     }

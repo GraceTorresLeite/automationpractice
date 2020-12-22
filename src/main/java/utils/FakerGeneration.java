@@ -111,7 +111,7 @@ public class FakerGeneration {
     
     public String getAddressPostalCode(){
 
-        address = faker.address().zipCode();
+        address = faker.address().countryCode();
         return address;
     }
     

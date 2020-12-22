@@ -83,7 +83,7 @@ public class FormPage {
 	    }
 	 
 	 public WebElement getStateSelectField(){
-		 return waits.visibilityOfElement(By.xpath("//div[@class='selector']/select[@id='id_state']/option[@value='1']"));
+		 return waits.visibilityOfElement(By.xpath("//div[@class='selector']/select[@id='id_state']/option[@value='3']"));
 	    }
 	 
 	 public WebElement getPostCodeTextField(){

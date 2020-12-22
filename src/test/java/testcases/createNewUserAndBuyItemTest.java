@@ -9,8 +9,10 @@ import com.aventstack.extentreports.Status;
 import formWeb.BaseTest;
 import formWeb.Report;
 import formWeb.Screenshot;
+import tasks.AddressValidateTask;
 import tasks.FormTask;
 import tasks.HomeTask;
+import tasks.ShippingTask;
 import tasks.SignInTask;
 /*
  * criando run para os testes*/
@@ -20,6 +22,8 @@ public class createNewUserAndBuyItemTest extends BaseTest {
 	private HomeTask homeTask = new HomeTask(driver);
 	private SignInTask signIntask = new SignInTask(driver);
 	private FormTask formTask = new FormTask(driver);
+	private AddressValidateTask addressValidateTask = new AddressValidateTask(driver);
+	private ShippingTask shippingTask = new ShippingTask(driver);
 	
 	@Test
 	public void createUserForm() {
@@ -30,6 +34,8 @@ public class createNewUserAndBuyItemTest extends BaseTest {
             homeTask.acessPageAutomationWeb();
             signIntask.getForm();
             formTask.fillForm();
+            addressValidateTask.addressConfirm();
+            shippingTask.aceptTerms();
             
            
 
