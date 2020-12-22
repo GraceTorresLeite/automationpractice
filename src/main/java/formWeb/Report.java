@@ -24,7 +24,7 @@ public class Report {
 
 	        htmlReporter = new ExtentHtmlReporter(PATH_REPORT + File.separator + "MyReport_" + DateTime.getDateTimeFormatReport()+  ".html");
 	        htmlReporter.config().setDocumentTitle("Reltorio Execucao de Testes Automatizados");
-	        htmlReporter.config().setReportName("Relatorio de Execução do Form Batista");
+	        htmlReporter.config().setReportName("Relatorio de Execucao AutomationPractice");
 	        htmlReporter.config().setTheme(Theme.DARK);
 	        htmlReporter.config().setEncoding("UTF-8");
 	        htmlReporter.config().setTimeStampFormat(" EEEE , MMMM dd , yyyy , hh:mm a '('zzz')'");
