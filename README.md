@@ -18,6 +18,8 @@
 |  10   |selecionar pagamento                             |                        |
 |  11   |confirme e valide se finalizado com sucesso      |                        |
 
+
+[Doc Java Faker](http://dius.github.io/java-faker/apidocs/index.html)
 ___
 
 

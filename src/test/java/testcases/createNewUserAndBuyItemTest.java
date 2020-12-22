@@ -9,6 +9,7 @@ import com.aventstack.extentreports.Status;
 import formWeb.BaseTest;
 import formWeb.Report;
 import formWeb.Screenshot;
+import tasks.FormTask;
 import tasks.HomeTask;
 import tasks.SignInTask;
 /*
@@ -18,6 +19,7 @@ public class createNewUserAndBuyItemTest extends BaseTest {
 	private WebDriver driver =this.getDriver();
 	private HomeTask homeTask = new HomeTask(driver);
 	private SignInTask signIntask = new SignInTask(driver);
+	private FormTask formTask = new FormTask(driver);
 	
 	@Test
 	public void createUserForm() {
@@ -27,6 +29,7 @@ public class createNewUserAndBuyItemTest extends BaseTest {
 
             homeTask.acessPageAutomationWeb();
             signIntask.getForm();
+            formTask.fillForm();
             
            
 
