@@ -9,6 +9,7 @@ import formWeb.Report;
 import formWeb.Screenshot;
 import formWeb.Waits;
 import pageObjects.FormPage;
+import pageObjects.HomePage;
 import utils.FakerGeneration;
 
 public class FormTask {
@@ -28,24 +29,28 @@ public class FormTask {
     public void fillForm() {
     	
     	titleFormValidation();
-    	//waits.loadElement(formPage.getRadioGender());
+    	waits.loadElement(formPage.getRadioGender());
     	formPage.getRadioGender().click();
+    	selectGenderValidation();
     	waits.loadElement(formPage.getFirstNameTextField());
     	formPage.getFirstNameTextField().sendKeys(faker.getFirstName());
     	waits.loadElement(formPage.getLastNameTextField());
     	formPage.getLastNameTextField().sendKeys(faker.getLastName());
     	waits.loadElement(formPage.getPasswordTextField());
     	formPage.getPasswordTextField().sendKeys(faker.getPassword());
+    	
     	waits.loadElement(formPage.getDaysSelectField());
-    	formPage.getDaysSelectField().sendKeys(faker.getDateDay());
+    	formPage.getDaysSelectField().click();
     	waits.loadElement(formPage.getMonthsSelectField());
-    	formPage.getMonthsSelectField().sendKeys(faker.getDateMonth());
+    	formPage.getMonthsSelectField().click();
     	waits.loadElement(formPage.getYearsSelectField());
-    	formPage.getYearsSelectField().sendKeys(faker.getDateYear());
-    	waits.loadElement(formPage.getNewsletterField());
-    	formPage.getNewsletterField().click();
-    	waits.loadElement(formPage.getOffersField());
-    	formPage.getOffersField().click();
+    	formPage.getYearsSelectField().click();
+    	
+    	//waits.loadElement(formPage.getNewsletterField());
+    	//formPage.getNewsletterField().click();
+    	//waits.loadElement(formPage.getOffersField());
+    	//formPage.getOffersField().click();
+    	
     	waits.loadElement(formPage.getAddressFirtsNameTextField());
     	formPage.getAddressFirtsNameTextField().sendKeys(faker.getAddressFirtsName());
     	waits.loadElement(formPage.getAddressLastNameTextField());
@@ -58,14 +63,18 @@ public class FormTask {
     	formPage.getAddressComplementTextField().sendKeys(faker.getAddressNumber());
     	waits.loadElement(formPage.getCityTextField());
     	formPage.getCityTextField().sendKeys(faker.getAddressCity());
+    	
     	waits.loadElement(formPage.getStateSelectField());
-    	formPage.getStateSelectField().sendKeys(faker.getAddressState());
+    	formPage.getStateSelectField().click();
+    	
     	waits.loadElement(formPage.getPostCodeTextField());
     	formPage.getPostCodeTextField().sendKeys(faker.getAddressPostalCode());
+    	
     	waits.loadElement(formPage.getCountrySelectField());
-    	formPage.getCountrySelectField().sendKeys(faker.getAddressCountry());
-    	waits.loadElement(formPage.getAddInformationTextField());
-    	formPage.getAddInformationTextField().sendKeys(faker.getPhoneHome());
+    	formPage.getCountrySelectField().click();
+    	
+    	//waits.loadElement(formPage.getAddInformationTextField());
+    	//formPage.getAddInformationTextField().sendKeys(faker.getPhoneHome());
     	waits.loadElement(formPage.getHomePhoneTextField());
     	formPage.getHomePhoneTextField().sendKeys(faker.getPhoneHome());
     	waits.loadElement(formPage.getMobilePhoneTextField());
@@ -91,10 +100,22 @@ public class FormTask {
 	        }
     }
     
+    private void selectGenderValidation() {
+		try {
+			Assertions.assertTrue(formPage.getRadioGender().isDisplayed());
+			Report.extentTest.log(Status.PASS, "Gender selecionado com sucesso", Screenshot.capture(driver));
+		
+		}catch (Exception e){
+
+	        Report.extentTest.log(Status.FAIL, "Nao foi possivel selecionar gender", Screenshot.capture(driver));
+
+	        }
+	}
+    
     private void buttonValidation() {
     	
     	try {
-			Assertions.assertTrue(formPage.getButtonRegister().isSelected());
+			Assertions.assertTrue(formPage.getButtonRegister().isDisplayed());
 			Report.extentTest.log(Status.PASS, "Pagina acessada com sucesso", Screenshot.capture(driver));
 		
 		}catch (Exception e){

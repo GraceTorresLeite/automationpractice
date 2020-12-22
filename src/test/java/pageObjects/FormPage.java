@@ -18,121 +18,99 @@ public class FormPage {
 	}
 	 
 	 public WebElement getNameTextFieldForm(){
-	      return this.driver.findElement(By.className("page-subheading"));
+		 return waits.visibilityOfElement(By.className("page-subheading"));
 	    }
-	 
+	////div[@id='uniform-id_gender2']/span/input[@id='id_gender2']
+	//div[@class='center_column col-xs-12 col-sm-12']/div/form/div/div/div[2]/label/div/span/input[@id='id_gender2']"
 	 public WebElement getRadioGender(){
-
-	        return this.driver.findElement(By.xpath("//div[@id='uniform-id_gender2']/span/input[@id='id_gender2']"));
+		 return waits.visibilityOfElement(By.id("id_gender2"));
 	    }
 	 
 	 public WebElement getFirstNameTextField(){
-
-	        return this.driver.findElement(By.id("customer_firstname"));
+		 return waits.visibilityOfElement(By.id("customer_firstname"));
 	    }
 	 
 	 public WebElement getLastNameTextField(){
-
-	        return this.driver.findElement(By.id("customer_lastname"));
+		 return waits.visibilityOfElement(By.id("customer_lastname"));
 	    }
 	 
 	 public WebElement getPasswordTextField(){
-
-	        return this.driver.findElement(By.id("passwd"));
+		 return waits.visibilityOfElement(By.id("passwd"));
 	    }
 	 
 	 public WebElement getDaysSelectField(){
-
-	        return this.driver.findElement(By.id("days"));
+		 return waits.visibilityOfElement(By.xpath("//div[@class='form-group']/div/div/div/select/option[@value='1']"));
 	    }
 	 
 	 public WebElement getMonthsSelectField(){
-
-	        return this.driver.findElement(By.id("months"));
+		 return waits.visibilityOfElement(By.xpath("//div[@class='form-group']/div/div[2]/div/select/option[@value='1']"));
 	    }
 	 
 	 public WebElement getYearsSelectField(){
-
-	        return this.driver.findElement(By.id("years"));
+		 return waits.visibilityOfElement(By.xpath("//div[@class='form-group']/div/div[3]/div/select/option[@value='1979']"));
 	    }
 	 
 	 public WebElement getNewsletterField(){
-
-	        return this.driver.findElement(By.id("newsletter"));
+		 return waits.visibilityOfElement(By.xpath("//form[@id='account-creation_form']/div[1]/div[7]/div/span/input[@value='1']"));
 	    }
 	 
 	 public WebElement getOffersField(){
-
-	        return this.driver.findElement(By.id("optin"));
+		 return waits.visibilityOfElement(By.xpath("//form[@id='account-creation_form']/div[1]/div[8]/div/span/input[@value='1']"));
 	    }
 	 
 	 public WebElement getAddressFirtsNameTextField(){
-
-	        return this.driver.findElement(By.id("firstname"));
+		 return waits.visibilityOfElement(By.id("firstname"));
 	    }
 	 
 	 public WebElement getAddressLastNameTextField(){
-
-	        return this.driver.findElement(By.id("lastname"));
+		 return waits.visibilityOfElement(By.id("lastname"));
 	    }
 	 
 	 public WebElement getAddressCompanyTextField(){
-
-	        return this.driver.findElement(By.id("company"));
+		 return waits.visibilityOfElement(By.id("company"));
 	    }
 	 
 	 public WebElement getAddressStreetNameTextField(){
-
-	        return this.driver.findElement(By.id("address1"));
+		 return waits.visibilityOfElement(By.id("address1"));
 	    }
 	 
 	 public WebElement getAddressComplementTextField(){
-
-	        return this.driver.findElement(By.id("address2"));
+		 return waits.visibilityOfElement(By.id("address2"));
 	    }
 	 
 	 public WebElement getCityTextField(){
-
-	        return this.driver.findElement(By.id("city"));
+		 return waits.visibilityOfElement(By.id("city"));
 	    }
 	 
 	 public WebElement getStateSelectField(){
-
-	        return this.driver.findElement(By.id("id_state"));
+		 return waits.visibilityOfElement(By.xpath("//div[@class='selector']/select[@id='id_state']/option[@value='1']"));
 	    }
 	 
 	 public WebElement getPostCodeTextField(){
-
-	        return this.driver.findElement(By.id("postcode"));
+		 return waits.visibilityOfElement(By.id("postcode"));
 	    }
 	 
 	 public WebElement getCountrySelectField(){
-
-	        return this.driver.findElement(By.id("id_country"));
+		 return waits.visibilityOfElement(By.xpath("//div[@id='uniform-id_country']/select/option[@value='21']"));
 	    }
 	 
 	 public WebElement getAddInformationTextField(){
-
-	        return this.driver.findElement(By.id("other"));
+		 return waits.visibilityOfElement(By.id("other"));
 	    }
 	 
 	 public WebElement getHomePhoneTextField(){
-
-	        return this.driver.findElement(By.id("phone"));
+		 return waits.visibilityOfElement(By.id("phone"));
 	    }
 	 
 	 public WebElement getMobilePhoneTextField(){
-
-	        return this.driver.findElement(By.id("phone_mobile"));
+		 return waits.visibilityOfElement(By.id("phone_mobile"));
 	    }
 	 
 	 public WebElement getAddressRefenceTextField(){
-
-	        return this.driver.findElement(By.id("alias"));
+		 return waits.visibilityOfElement(By.id("alias"));
 	    }
 	 
 	 public WebElement getButtonRegister(){
-
-	        return this.driver.findElement(By.id("submitAccount"));
+		 return waits.visibilityOfElement(By.id("submitAccount"));
 	    }
 }
