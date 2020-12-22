@@ -28,7 +28,7 @@ public class FormTask {
     public void fillForm() {
     	
     	titleFormValidation();
-    	waits.loadElement(formPage.getRadioGender());
+    	//waits.loadElement(formPage.getRadioGender());
     	formPage.getRadioGender().click();
     	waits.loadElement(formPage.getFirstNameTextField());
     	formPage.getFirstNameTextField().sendKeys(faker.getFirstName());

@@ -13,9 +13,8 @@ public class FormPage {
 	 
 	 
 	public FormPage(WebDriver driver) {
-		super();
 		this.driver = driver;
-		waits = new Waits(this.driver);
+		waits = new Waits(driver);
 	}
 	 
 	 public WebElement getNameTextFieldForm(){
@@ -24,7 +23,7 @@ public class FormPage {
 	 
 	 public WebElement getRadioGender(){
 
-	        return this.driver.findElement(By.id("uniform-id_gender2"));
+	        return this.driver.findElement(By.xpath("//div[@id='uniform-id_gender2']/span/input[@id='id_gender2']"));
 	    }
 	 
 	 public WebElement getFirstNameTextField(){
